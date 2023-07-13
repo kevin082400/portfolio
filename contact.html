@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Portfolio</title>
+  <form class="Contactform" action="send.php"></form>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5; /* Light gray background color */
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    main {
+      padding: 40px;
+      margin-top: 60px; /* Account for the fixed navigation bar */
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    &copy; 2023 Your Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
